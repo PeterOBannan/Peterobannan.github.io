@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Peter O’Bannan — Leadership & AI</title>
-  <meta name="description" content="Portfolio and resume for Peter O’Bannan — MSML candidate, STEM educator, AI/RAG builder." />
+  <title>Peter O’Bannan — Leadership & Learning</title>
+  <meta name="description" content="Peter O’Bannan — educator, consultant, and optimistic futurist building with clients and students for practical impact." />
+
+  <!-- Basic, trustworthy “clinic-clean” look -->
   <style>
     :root{
       --bg:#0b0f17; --card:#121826; --text:#e6eef8; --muted:#a6b3c5;
@@ -14,109 +16,184 @@
     html,body{height:100%}
     body{
       margin:0; font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      background:radial-gradient(1200px 800px at 80% -10%, rgba(77,163,255,.15), transparent 60%),
-                 radial-gradient(900px 600px at -10% 20%, rgba(126,240,209,.12), transparent 60%),
-                 var(--bg);
+      background:
+        radial-gradient(1100px 700px at 80% -10%, rgba(77,163,255,.15), transparent 60%),
+        radial-gradient(900px 600px at -10% 20%, rgba(126,240,209,.12), transparent 60%),
+        var(--bg);
       color:var(--text);
+      -webkit-font-smoothing:antialiased;
     }
-    .container{max-width:1100px; margin:0 auto; padding:28px}
-    header{display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 0}
-    .brand{display:flex; align-items:center; gap:14px}
-    .logo{width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg, var(--accent), var(--accent2)); box-shadow:0 0 0 6px var(--ring)}
-    nav a{color:var(--muted); text-decoration:none; margin-left:18px; font-weight:600}
-    nav a:hover{color:var(--text)}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text)}
+    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 0 6px var(--ring)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover, nav a:focus{color:var(--text);outline:none}
+    .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:16px;top:16px;width:auto;height:auto;background:#fff;color:#000;border-radius:8px;padding:8px 12px;z-index:9999}
 
-    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; padding:40px 0}
-    .card{background:rgba(18,24,38,.75); border:1px solid #1e293b; border-radius:18px; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,.35)}
-    .badge{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:rgba(77,163,255,.12); color:#cbe6ff; border:1px solid rgba(77,163,255,.25); font-weight:600; font-size:13px}
-    h1{font-size:44px; line-height:1.1; margin:.6rem 0}
-    .lead{color:var(--muted); font-size:18px}
-    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:22px}
-    .btn{appearance:none; border:none; cursor:pointer; padding:12px 16px; font-weight:700; border-radius:12px; text-decoration:none; display:inline-flex; align-items:center; gap:10px}
-    .btn-primary{background:linear-gradient(135deg, var(--accent), var(--accent2)); color:#06121c}
-    .btn-ghost{background:transparent; border:1px solid #233142; color:var(--text)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:30px 0}
+    .card{background:rgba(18,24,38,.78);border:1px solid #1e293b;border-radius:18px;padding:26px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(77,163,255,.12);color:#cbe6ff;border:1px solid rgba(77,163,255,.25);font-weight:600;font-size:13px}
+    h1{font-size:42px;line-height:1.12;margin:.6rem 0}
+    .lead{color:var(--muted);font-size:18px;max-width:60ch}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{appearance:none;border:none;cursor:pointer;padding:12px 16px;font-weight:700;border-radius:12px;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#06121c}
+    .btn-ghost{background:transparent;border:1px solid #233142;color:var(--text)}
 
-    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .grid .card h3{margin-top:0}
-
-    footer{padding:40px 0; color:var(--muted); font-size:14px}
+    .section{scroll-margin-top:84px;margin-top:26px}
+    .section h2{margin:0 0 10px 0}
     .muted{color:var(--muted)}
+    .avatar{width:100%;border-radius:16px;border:1px solid #1e293b;box-shadow:0 10px 24px rgba(0,0,0,.3);object-fit:cover}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .gallery img{width:100%;height:210px;object-fit:cover;border-radius:12px;border:1px solid #1e293b}
 
+    footer{padding:40px 0;color:var(--muted);font-size:14px}
     @media (max-width:900px){.hero{grid-template-columns:1fr}}
-    @media (max-width:720px){.grid{grid-template-columns:1fr}}
+    @media (max-width:720px){.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}}
   </style>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div>
+    <header role="banner" aria-label="Primary">
+      <a class="brand" href="#top">
+        <span class="logo" aria-hidden="true"></span>
+        <span>
           <strong>Peter A. O’Bannan</strong><br/>
-          <span class="muted">MSML candidate · STEM Educator · AI/RAG Builder</span>
-        </div>
-      </div>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#writing">Writing</a>
+          <span class="muted">Educator • Consultant • Optimistic Futurist</span>
+        </span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work History</a>
+        <a href="#education">Education</a>
+        <a href="#books">Books</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="card">
-        <span class="badge">Open to roles · Remote/WA</span>
-        <h1>Leadership, data, and AI — applied to real ops problems.</h1>
-        <p class="lead">Warehouse ops at Amazon (GEG1), former STEM educator, and MSML at WGU. I build pragmatic AI systems (Whisper + RAG with Chroma) and values-based leadership frameworks for healthcare and education orgs.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="assets/Peter_OBannan_Resume.pdf" target="_blank" rel="noopener">View Résumé (PDF)</a>
-          <a class="btn btn-ghost" href="#projects">See Projects</a>
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="card">
+          <span class="badge">Based in WA • Open to remote</span>
+          <h1>Leadership and learning—applied to real work.</h1>
+          <p class="lead">
+            I help teams adopt better habits and ever-improving systems. My approach is collaborative:
+            I learn with students and clients, combine practical operations with modern tools,
+            and focus on outcomes that increase clarity, efficiency, and impact.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="assets/pdf/Peter-OBannan-Resume.pdf" target="_blank" rel="noopener">View Résumé (PDF)</a>
+            <a class="btn btn-ghost" href="#services">See Services</a>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <h3>Now building</h3>
-        <ul>
-          <li><strong>ESH Project:</strong> GPU-accelerated Whisper + diarization + OCR ingestion into Chroma for case research.</li>
-          <li><strong>Sparkit:</strong> Biofuel retrofit kit concept — stakeholder map, risk register, GTM draft.</li>
-          <li><strong>Leadership Toolkit:</strong> Values-first interventions, trauma-informed training, comms playbooks.</li>
-        </ul>
-      </div>
-    </section>
+        <div class="card">
+          <img class="avatar" src="assets/img/Peter.Face.2025.jpg" alt="Headshot of Peter O’Bannan smiling." />
+        </div>
+      </section>
 
-    <section id="projects" class="grid">
-      <article class="card">
-        <h3>ESH RAG Pipeline</h3>
-        <p class="muted">Whisper (CUDA), PyPDF2 + Tesseract OCR, Chroma embeddings, retrieval UI. Focus on diarization and clean normalization.</p>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub Repo (soon)</a>
-      </article>
-      <article class="card">
-        <h3>Leadership Playbook</h3>
-        <p class="muted">Sinek’s Golden Circle, Bass’s transformational leadership, and shared-leadership pilots for culture reset.</p>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Read Summary (soon)</a>
-      </article>
-      <article class="card">
-        <h3>Sparkit Biofuel</h3>
-        <p class="muted">Exploratory venture: retrofit kit, pilot partner outreach, and regulatory/technical diligence.</p>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Concept Notes (soon)</a>
-      </article>
-    </section>
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="card">
+          <h2>About</h2>
+          <p class="muted">
+            Educator and consultant in Washington State. I care about values-based leadership,
+            clear communication, and building capacity—especially in education and community-focused organizations.
+            Outside of work, I’m a dad who loves the Spokane area and cheering at local games.
+          </p>
+          <div class="gallery" aria-label="Personal photos">
+            <img src="assets/img/OBannan.Family.Coulee.2025.jpeg" alt="Family photo outdoors with basalt cliffs in the background." />
+            <img src="assets/img/OBannan.Family.Baseball.2025.jpeg" alt="Family at a baseball game under the stadium lights." />
+            <img src="assets/img/OBannan.Kids.2025.jpeg" alt="Kids smiling near a dam spillway at dusk." />
+          </div>
+        </div>
+      </section>
 
-    <section id="writing" style="margin-top:28px">
-      <div class="card">
-        <h3>Writing & Research</h3>
-        <ul>
-          <li>Annotated bibliographies on leadership communication, power bases, and organizational change (WGU).</li>
-          <li>Technical notes on Whisper, diarization (pyannote), and RAG pipelines for mixed-media corpora.</li>
-        </ul>
-      </div>
-    </section>
+      <!-- SERVICES -->
+      <section id="services" class="section">
+        <div class="card">
+          <h2>Services</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Leadership & Culture</h3>
+              <p class="muted">Facilitation, comms playbooks, values-first interventions, and decision clarity.</p>
+            </article>
+            <article class="card">
+              <h3>Teaching & Workshops</h3>
+              <p class="muted">Practical curriculum, hands-on sessions, and learning environments that build momentum.</p>
+            </article>
+            <article class="card">
+              <h3>Systems & Ops Enablement</h3>
+              <p class="muted">Lightweight processes and tools that help teams move faster with less noise.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <section id="contact" style="margin-top:28px">
-      <div class="card">
-        <h3>Contact</h3>
-        <p class="muted">Email: <a href="mailto:YOUREMAIL@example.com">YOUREMAIL@example.com</a> · LinkedIn: <a href="#" target="_blank" rel="noopener">link</a> · GitHub: <a href="#" target="_blank" rel="noopener">link</a></p>
-      </div>
-    </section>
+      <!-- WORK HISTORY -->
+      <section id="work" class="section">
+        <div class="card">
+          <h2>Work History</h2>
+          <ul class="muted">
+            <li><strong>Amazon Fulfillment Center</strong> — Warehouse Associate (2025–Present)</li>
+            <li><strong>Eastern State Hospital</strong> — Mental Health Technician (2024)</li>
+            <li><strong>STEM Teaching</strong> — Math/Science/Robotics, multiple districts (2016–2023)</li>
+            <li><strong>Additional roles</strong> — Hospitality and trades (prior years)</li>
+          </ul>
+          <p class="muted">See résumé for full details.</p>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <div class="card">
+          <h2>Education</h2>
+          <ul class="muted">
+            <li><strong>Western Governors University</strong> — MS in Management & Leadership (2025)</li>
+            <li><strong>Western Governors University</strong> — BA in Science (Chemistry) (2016)</li>
+            <li><strong>Spokane Falls Community College</strong> — AA (2014)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- BOOKS -->
+      <section id="books" class="section">
+        <div class="card">
+          <h2>Books</h2>
+          <p class="muted">A living shelf—titles I recommend, plus a few I’ve paused or am still working through.</p>
+          <ul id="book-list" class="muted" aria-live="polite">
+            <!-- You can hardcode now; later we can swap to a JSON-driven list -->
+            <li><strong>The Fifth Discipline</strong> — Peter Senge (Recommended)</li>
+            <li><strong>Start With Why</strong> — Simon Sinek (In Progress)</li>
+          </ul>
+          <p class="muted">Want to swap book notes? <a href="#contact">Send me a message</a>.</p>
+        </div>
+      </section>
+
+      <!-- WRITING -->
+      <section id="writing" class="section">
+        <div class="card">
+          <h2>Writing</h2>
+          <p class="muted">Selected notes and essays coming soon.</p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="card">
+          <h2>Contact</h2>
+          <p class="muted">
+            Email: <a href="mailto:PeterOBannan@gmail.com">PeterOBannan@gmail.com</a> · Region: Spokane / WA
+          </p>
+        </div>
+      </section>
+    </main>
 
     <footer>
       © <span id="year"></span> Peter A. O’Bannan. Built with GitHub Pages.
@@ -124,7 +201,16 @@
   </div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear()
+    // Year + smooth scroll
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
+      });
+    });
   </script>
 </body>
 </html>
+
