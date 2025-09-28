@@ -1,52 +1,76 @@
-<!-- =============================
-writing.html
-============================= -->
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Writing — Peter O’Bannan</title>
-<meta name="description" content="Notes and essays." />
-<link rel="stylesheet" href="/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Writing — Peter O’Bannan</title>
+  <meta name="description" content="Tutoring and tools to get your ideas on paper—fast and with quality." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="container">
-<header role="banner" aria-label="Primary">
-<a class="brand" href="/">
-<span class="logo" aria-hidden="true"></span>
-<span>
-<strong>Peter A. O’Bannan</strong><br/>
-<span class="muted">Educator • Consultant • Optimistic Futurist</span>
-</span>
-</a>
-<nav aria-label="Main">
-<a href="/">Home</a>
-<a href="/services.html">Services</a>
-<a href="/work.html">Work History</a>
-<a href="/education.html">Education</a>
-<a href="/books.html">Books</a>
-<a href="/writing.html" aria-current="page">Writing</a>
-<a href="/contact.html">Contact</a>
-</nav>
-</header>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="container">
+    <header role="banner" aria-label="Primary">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true"></span>
+        <span>
+          <strong>Peter A. O’Bannan</strong><br/>
+          <span class="muted">Educator • Consultant • Optimistic Futurist</span>
+        </span>
+      </a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/work.html">Work History</a>
+        <a href="/education.html">Education</a>
+        <a href="/books.html">Book Lists</a>
+        <a href="/writing.html" aria-current="page">Writing</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
 
+    <main id="main">
+      <section class="section">
+        <div class="card">
+          <h1>Writing</h1>
+          <p class="muted">
+            This is one of the key areas where I help people: using modern tools and practical coaching to
+            <strong>give your ideas a voice</strong>. If you don’t think of yourself as “bookish,” or if you have a lot
+            to say but it takes forever to get it onto the page, I can help you build a workflow that maximizes your
+            time and produces clear, credible writing. The goal is simple: turn ideas into finished pieces that can
+            earn <strong>college credit</strong>, move you <strong>ahead in your business</strong>, and
+            <strong>support your professional growth</strong>.
+          </p>
+          <p class="muted">
+            Below are a couple of sample documents I produced in a six-week window using the same tools and methods I
+            teach. I’ll keep adding examples over time.
+          </p>
 
-<main id="main">
-<section class="section">
-<div class="card">
-<h1>Writing</h1>
-<p class="muted">Selected notes and essays coming soon.</p>
-</div>
-</section>
-</main>
+          <ul class="muted" style="margin-top:12px">
+            <li>
+              <a href="/assets/pdf/Bibliography%207.17.2025.pdf" target="_blank" rel="noopener">
+                Bibliography 7.17.2025 (PDF)
+              </a>
+            </li>
+            <li>
+              <a href="/assets/pdf/Example.Assignment.pdf" target="_blank" rel="noopener">
+                Example.Assignment (PDF)
+              </a>
+            </li>
+          </ul>
 
+          <p class="muted" style="margin-top:12px">
+            Want this kind of output for your degree program or workplace? <a href="/contact.html">Reach out</a> and we’ll
+            set up a tutoring plan tailored to your goals.
+          </p>
+        </div>
+      </section>
+    </main>
 
-<footer>
-© <span id="year"></span> Peter A. O’Bannan. Built with GitHub Pages.
-</footer>
-</div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <footer>
+      © <span id="year"></span> Peter A. O’Bannan. Built with GitHub Pages.
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
