@@ -1,0 +1,52 @@
+<!-- =============================
+writing.html
+============================= -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Writing — Peter O’Bannan</title>
+<meta name="description" content="Notes and essays." />
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="container">
+<header role="banner" aria-label="Primary">
+<a class="brand" href="/">
+<span class="logo" aria-hidden="true"></span>
+<span>
+<strong>Peter A. O’Bannan</strong><br/>
+<span class="muted">Educator • Consultant • Optimistic Futurist</span>
+</span>
+</a>
+<nav aria-label="Main">
+<a href="/">Home</a>
+<a href="/services.html">Services</a>
+<a href="/work.html">Work History</a>
+<a href="/education.html">Education</a>
+<a href="/books.html">Books</a>
+<a href="/writing.html" aria-current="page">Writing</a>
+<a href="/contact.html">Contact</a>
+</nav>
+</header>
+
+
+<main id="main">
+<section class="section">
+<div class="card">
+<h1>Writing</h1>
+<p class="muted">Selected notes and essays coming soon.</p>
+</div>
+</section>
+</main>
+
+
+<footer>
+© <span id="year"></span> Peter A. O’Bannan. Built with GitHub Pages.
+</footer>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
