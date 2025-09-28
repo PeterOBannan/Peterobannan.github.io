@@ -1,22 +1,13 @@
-# === Project structure (copy this layout into your repo root) ===
-</div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
-
-
-
-
 <!-- =============================
-contact.html
+index.html (Home)
 ============================= -->
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Contact — Peter O’Bannan</title>
-<meta name="description" content="Get in touch." />
+<title>Home — Peter O’Bannan</title>
+<meta name="description" content="Leadership and learning—applied to real work." />
 <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -31,23 +22,52 @@ contact.html
 </span>
 </a>
 <nav aria-label="Main">
-<a href="/">Home</a>
+<a href="/" aria-current="page">Home</a>
 <a href="/services.html">Services</a>
 <a href="/work.html">Work History</a>
 <a href="/education.html">Education</a>
 <a href="/books.html">Books</a>
 <a href="/writing.html">Writing</a>
-<a href="/contact.html" aria-current="page">Contact</a>
+<a href="/contact.html">Contact</a>
 </nav>
 </header>
 
 
 <main id="main">
+<section class="hero">
+<div class="card">
+<span class="badge">Based in WA • Open to remote</span>
+<h1>Leadership and learning—applied to real work.</h1>
+<p class="lead">
+I help teams adopt better habits and ever-improving systems. My approach is collaborative:
+I learn with students and clients, combine practical operations with modern tools,
+and focus on outcomes that increase clarity, efficiency, and impact.
+</p>
+<div class="cta">
+<!-- Make sure your resume file is at /assets/pdf/Peter-OBannan-Resume.pdf -->
+<a class="btn btn-primary" href="/assets/pdf/Peter-OBannan-Resume.pdf" target="_blank" rel="noopener">View Résumé (PDF)</a>
+<a class="btn btn-ghost" href="/services.html">See Services</a>
+</div>
+</div>
+<div class="card">
+<img class="avatar" src="/assets/img/Peter.Face.2025.jpg" alt="Headshot of Peter O’Bannan smiling." />
+</div>
+</section>
+
+
 <section class="section">
 <div class="card">
-<h1>Contact</h1>
-<p class="muted">Email: <a href="mailto:Peter@OBannanConsultingResearch.com">Peter@OBannanConsultingResearch.com</a> · Region: Spokane / WA</p>
-<p class="muted">Prefer a PDF? <a href="/assets/pdf/Peter-OBannan-Resume.pdf" target="_blank" rel="noopener">Download my résumé</a>.</p>
+<h2>About</h2>
+<p class="muted">
+Educator and consultant in Washington State. I care about values-based leadership,
+clear communication, and building capacity—especially in education and community-focused organizations.
+Outside of work, I’m a dad who loves the Spokane area and cheering at local games.
+</p>
+<div class="gallery" aria-label="Personal photos">
+<img src="/assets/img/OBannan.Family.Coulee.2025.jpeg" alt="Family photo outdoors with basalt cliffs in the background." />
+<img src="/assets/img/OBannan.Family.Baseball.2025.jpeg" alt="Family at a baseball game under the stadium lights." />
+<img src="/assets/img/OBannan.Kids.2025.jpeg" alt="Kids smiling near a dam spillway at dusk." />
+</div>
 </div>
 </section>
 </main>
@@ -60,43 +80,3 @@ contact.html
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
-
-
-
-<!-- =============================
-404.html (optional but nice)
-============================= -->
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Not found — Peter O’Bannan</title>
-<link rel="stylesheet" href="/styles.css" />
-</head>
-<body>
-<div class="container">
-<main id="main">
-<section class="section">
-<div class="card">
-<h1>Page not found</h1>
-<p class="muted">Try the <a href="/">home page</a>.</p>
-</div>
-</section>
-</main>
-</div>
-</body>
-</html>
-
-
-
-
-<!-- =============================
-Notes
-============================= -->
-<!-- 1) PDF path: Place your resume at /assets/pdf/Peter-OBannan-Resume.pdf to match links above. Filenames and folders on GitHub Pages are case-sensitive. -->
-<!-- 2) Image paths: Update /assets/img/... names to exactly match what’s in your repo. -->
-<!-- 3) Nav highlights: Each page marks its own <a> with aria-current="page". -->
-<!-- 4) If you keep PDFs directly under /assets (not /assets/pdf), then change links to /assets/Peter-OBannan-Resume.pdf. -->
-<!-- 5) You can delete this big comment block before committing; it’s here as a scaffold. -->
