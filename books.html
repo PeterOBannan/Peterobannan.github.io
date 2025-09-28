@@ -7,49 +7,89 @@ books.html
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Books — Peter O’Bannan</title>
-<meta name="description" content="Recommendations and reading list." />
+<meta name="description" content="A small shelf of books that have shaped my thinking. I welcome your recommendations." />
 <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="container">
 <header role="banner" aria-label="Primary">
-<a class="brand" href="/">
-<span class="logo" aria-hidden="true"></span>
-<span>
-<strong>Peter A. O’Bannan</strong><br/>
-<span class="muted">Educator • Consultant • Optimistic Futurist</span>
-</span>
-</a>
-<nav aria-label="Main">
-<a href="/">Home</a>
-<a href="/services.html">Services</a>
-<a href="/work.html">Work History</a>
-<a href="/education.html">Education</a>
-<a href="/books.html" aria-current="page">Books</a>
-<a href="/writing.html">Writing</a>
-<a href="/contact.html">Contact</a>
-</nav>
+  <a class="brand" href="/">
+    <span class="logo" aria-hidden="true"></span>
+    <span>
+      <strong>Peter A. O’Bannan</strong><br/>
+      <span class="muted">Educator • Consultant • Optimistic Futurist</span>
+    </span>
+  </a>
+  <nav aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/services.html">Services</a>
+    <a href="/work.html">Work History</a>
+    <a href="/education.html">Education</a>
+    <a href="/books.html" aria-current="page">Books</a>
+    <a href="/writing.html">Writing</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
 </header>
 
-
 <main id="main">
-<section class="section">
-<div class="card">
-<h1>Books</h1>
-<p class="muted">A living shelf—titles I recommend, plus a few I’ve paused or am still working through.</p>
-<ul id="book-list" class="muted" aria-live="polite">
-<li><strong>The Fifth Discipline</strong> — Peter Senge (Recommended)</li>
-<li><strong>Start With Why</strong> — Simon Sinek (In Progress)</li>
-</ul>
-<p class="muted">Want to swap book notes? <a href="/contact.html">Send me a message</a>.</p>
-</div>
-</section>
+  <!-- Intro -->
+  <section class="section" aria-labelledby="books-title">
+    <div class="card">
+      <h1 id="books-title">Books</h1>
+      <p>
+        The purpose of this section is simple: to share a few books that have
+        stood out in my own thinking. It’s a <em>slim</em> slice of many titles I enjoy,
+        especially on audiobook. I take book suggestions seriously—if something
+        has been meaningful to you, I’d love to hear about it. Please send
+        recommendations via the <a href="/contact.html">contact page</a>.
+      </p>
+      <p class="muted">
+        (At some point I may add a separate list of books I’ve paused or not yet finished—
+        but for now, this page focuses on selections I’ve found interesting and meaningful.)
+      </p>
+    </div>
+  </section>
+
+  <!-- Curated list -->
+  <section class="section" aria-labelledby="curated-heading">
+    <div class="card">
+      <h2 id="curated-heading">A small, meaningful shelf</h2>
+      <ul id="book-list" aria-live="polite">
+        <li><strong>The Holy Bible</strong> — canonical texts collected over centuries</li>
+        <li><strong>Go Shallow to Go Deep</strong> — reflections on starting small to build durable depth</li>
+        <li><strong>Les Misérables</strong> — Victor Hugo</li>
+        <li><strong>How to Win Friends and Influence People</strong> — Dale Carnegie</li>
+        <li><strong>Think and Grow Rich</strong> — Napoleon Hill</li>
+        <li><strong>The Mysterious Stranger</strong> — Mark Twain</li>
+        <li><strong>The 21 Irrefutable Laws of Leadership</strong> — John C. Maxwell</li>
+        <li><strong>The Kite Runner</strong> — Khaled Hosseini</li>
+      </ul>
+
+      <p class="muted">
+        Want to swap notes or suggest a title? <a href="/contact.html">Send me a message</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Reader question / prompt -->
+  <section class="section" aria-labelledby="prompt-heading">
+    <div class="card" role="complementary">
+      <h2 id="prompt-heading">A question for you</h2>
+      <p>
+        Think of all the characters you’ve encountered in any media—books, TV, film, games.
+        <strong>Which character do you most identify as being the <em>opposite</em> of yourself, and why?</strong>
+      </p>
+      <p class="muted">
+        If you’d like to share your answer, drop it in a note on the
+        <a href="/contact.html">contact page</a>. I’m always curious how stories shape us.
+      </p>
+    </div>
+  </section>
 </main>
 
-
 <footer>
-© <span id="year"></span> Peter A. O’Bannan. Built with GitHub Pages.
+  © <span id="year"></span> Peter A. O’Bannan. Built with GitHub Pages.
 </footer>
 </div>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
