@@ -1,1 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consulting & Operations | Peter A. O'Bannan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header role="banner">
+      <a class="brand" href="index.html">Peter A. O'Bannan</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Initiatives</a>
+        <a href="services.html" class="active">Consulting</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
+    <main>
+      <h1>Consulting & Operations</h1>
+      <p class="muted" style="margin-bottom: 2rem;">Strategic intervention for complex systems, workflow bottlenecks, and bureaucratic bloat.</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="color: var(--accent-blue);">Lean Management & 5S Workflows</h3>
+          <p>Drawing on high-volume logistics experience (including safety and flow analysis for Amazon), I identify physical and systemic choke points in your operation. I implement rigorous 5S methodologies to streamline environments, reduce waste, and build scalable, standardized processes.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="color: var(--accent-blue);">Institutional Auditing & Reform</h3>
+          <p>Large organizations often suffer from middle-management bloat and toxic bureaucracy. I provide structural audits to cut through administrative noise, re-establish clear lines of liability, and implement frameworks like the Entrepreneurial Operating System (EOS) to get teams executing on reality, not just policy.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="color: var(--accent-blue);">AI & Workflow Automation</h3>
+          <p>Integrating Large Language Models (LLMs) and advanced software tools into daily administrative tasks. I train teams on how to leverage AI to radically accelerate research, reporting, and operational logistics without sacrificing quality or data security.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="color: var(--accent-blue);">Strategic Advising</h3>
+          <p>Direct consulting for leadership teams facing complex regulatory, infrastructural, or personnel crises. Focused on decisive action, transparent communication, and long-term structural resilience.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Peter A. O'Bannan.
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
