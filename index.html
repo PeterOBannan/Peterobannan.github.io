@@ -1,82 +1,72 @@
-<!-- =============================
-index.html (Home)
-============================= -->
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Home — Peter O’Bannan</title>
-<meta name="description" content="Leadership and learning—applied to real work." />
-<link rel="stylesheet" href="/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peter A. O'Bannan | Strategic Leadership & Consulting</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="container">
-<header role="banner" aria-label="Primary">
-<a class="brand" href="/">
-<span class="logo" aria-hidden="true"></span>
-<span>
-<strong>Peter A. O’Bannan</strong><br/>
-<span class="muted">Educator • Consultant • Optimistic Futurist</span>
-</span>
-</a>
-<nav aria-label="Main">
-<a href="/" aria-current="page">Home</a>
-<a href="/services.html">Services</a>
-<a href="/work.html">Work History</a>
-<a href="/education.html">Education</a>
-<a href="/books.html">Books</a>
-<a href="/writing.html">Writing</a>
-<a href="/contact.html">Contact</a>
-</nav>
-</header>
+  <div class="container">
+    <header role="banner">
+      <a class="brand" href="index.html">Peter A. O'Bannan</a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Initiatives</a>
+        <a href="services.html">Consulting</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
+    <main>
+      <section class="card grid-2" style="align-items: center;">
+        <div>
+          <h1>Bridging Vision with Execution.</h1>
+          <p style="font-size: 1.1rem; color: var(--accent-blue); font-weight: 600;">
+            Strategic Leadership | Infrastructure Innovation | Institutional Accountability
+          </p>
+          <p class="muted">
+            Solving complex bureaucratic failures and scaling high-impact community solutions through advanced technology, lean operations, and radical authenticity.
+          </p>
+        </div>
+        <div>
+          <img src="assets/Peter.Face.2025.jpg" alt="Peter A. O'Bannan" class="profile-img" />
+        </div>
+      </section>
 
-<main id="main">
-<section class="hero">
-<div class="card">
-<span class="badge">Based in WA • Open to remote</span>
-<h1>Helping people and organizations grow with clarity and momentum.</h1>
-<p class="lead">
-  I work with leaders, teams, and students to make progress that lasts.  
-  My approach combines hands-on teaching with practical consulting: clear systems, stronger communication, and leadership that empowers rather than overwhelms.  
-  On this site you’ll find more detail about my services, work history, and ongoing projects.
-</p>
-<div class="cta">
-<a class="btn btn-primary" href="/assets/pdf/Peter-OBannan-Resume.pdf" target="_blank" rel="noopener">View Résumé (PDF)</a>
-<a class="btn btn-ghost" href="/services.html">See Services</a>
-</div>
-</div>
-<div class="card">
-<img class="avatar" src="/assets/img/Peter.Face.2025.jpg" alt="Headshot of Peter O’Bannan smiling." />
-</div>
-</section>
+      <section class="card">
+        <h2>Driven by Purpose</h2>
+        <p>
+          Deeply rooted in the Pacific Northwest, my work is driven by a commitment to the communities that shaped me. I grew up in the North Central area of Spokane, and today, my wife Tawnee and I are raising our four children in Medical Lake, Washington. 
+        </p>
+        <img src="assets/OBannan.Family.Baseball.2025.jpeg" alt="The O'Bannan Family" class="family-img" />
+        <p>
+          Whether engineering advanced waste-to-energy infrastructure, pushing for accountability in state healthcare, or developing educational software, my core objective remains the same: to leave the next generation with functioning, transparent systems and the proof that complex problems can be solved.
+        </p>
+      </section>
 
+      <section>
+        <h2>Core Focus Areas</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3 style="color: var(--accent-blue);">Advanced Infrastructure</h3>
+            <p class="muted">Pioneering the integration of Flash Joule Heating and Electrothermal Chlorination to remediate municipal waste and extract strategic minerals.</p>
+            <a href="projects.html">View Initiative &rarr;</a>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--accent-blue);">Institutional Reform</h3>
+            <p class="muted">Driving transparency, dismantling toxic bureaucracy, and re-instilling liability into state-run healthcare systems.</p>
+            <a href="projects.html">View Initiative &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<section class="section">
-<div class="card">
-<h2>About</h2>
-<p class="muted">
-  I’ve spent my career moving between education, healthcare, and operations — places where clarity, structure, and strong leadership matter most.  
-  I grew up in Spokane, and now my family and I are based in Medical Lake. 
-  My wife Tawnee and I value raising our kids with community around us — from baseball and volleyball games to our regular involvement at church. Those rhythms of family, faith, and small-town life anchor me just as much as my professional work in education and leadership.  
-  This site is a place where I share both: the practical skills I bring to organizations and the personal context that shapes how I lead, teach, and serve.
-</p>
-<div class="gallery" aria-label="Personal photos">
-  <img src="/assets/img/OBannan.Family.Coulee.2025.jpeg" alt="Family photo outdoors with basalt cliffs in the background." />
-  <img src="/assets/img/OBannan.Family.Baseball.2025.jpeg" alt="Family at a baseball game under the stadium lights." />
-  <img src="/assets/img/TnT.jpg" alt="Truly and Tawnee riding a rollercoaster together, smiling." />
-</div>
-</div>
-</section>
-</main>
-
-
-<footer>
-© <span id="year"></span> Peter A. O’Bannan. Built with GitHub Pages.
-</footer>
-</div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <footer>
+      © <span id="year"></span> Peter A. O'Bannan. Built with GitHub Pages.
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
