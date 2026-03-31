@@ -1,37 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>404 - Not Found | Peter A. O'Bannan</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>404 - Page Not Found | Peter A. O’Bannan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="container">
-    <header role="banner">
-      <a class="brand" href="index.html">Peter A. O'Bannan</a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="arc.html">ARC</a>
-        <a href="projects.html">Initiatives</a>
-        <a href="services.html">Consulting</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="card" style="text-align: center; padding: 4rem 2rem;">
-        <h1>404: System Redirect</h1>
-        <p>The page you are looking for has been moved or does not exist.</p>
-        <p><a href="index.html" class="button">Return to Base</a></p>
-      </section>
-    </main>
-
-    <footer>
-      © <span id="year"></span> Peter A. O'Bannan | <a href="mailto:PeterOBannan@gmail.com">PeterOBannan@gmail.com</a>
-    </footer>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center;">
+    <div class="card" style="max-width: 500px;">
+        <h1 style="font-size: 3rem; margin-bottom: 0;">404</h1>
+        <div class="accent-line" style="margin: 1rem auto;"></div>
+        <h2>Strategic Misalignment</h2>
+        <p>The resource you are looking for has been moved or does not exist in the current strategic framework.</p>
+        <a href="index.html" class="btn primary" style="border: 1px solid var(--navy); margin-top: 1.5rem;">Return Home</a>
+    </div>
 </body>
 </html>
